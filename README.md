@@ -14,6 +14,23 @@ The images are then merged into a single image and shown on screen to the user.
 - Amazon Basics Stereo
 
 # Updates:
+V 0.3.2:
+  - Additions:
+    - Array of last captured image time
+    - Saves an image every 2 seconds 
+    - Full screen presentation and fit to screen with cameras
+    - Images are stored with date, camera number and increasing numbers.
+    - A range of camera initializations are done to see what cameras are working and creates cameras array accordingly
+	- If a camera does not
+  - Changes:
+    - in Merge():
+	- Now checks to see how many frames exist and divides the screen accordingly
+		- If an odd number of cameras, creates a black image and places it in a position to make it even
+	- the position of the time is now adjusted depending on the screen split
+  - Minor Tweaks:
+    - 
+  - Notes:
+    - Powered USB multiport was added to work with the extension cord and fixed images glitches from them
 V 0.3.1:
   - Additions:
     - Image Capture when a Person is detected
